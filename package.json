@@ -1,0 +1,22 @@
+{
+  "name": "retohoy",
+  "version": "1.0.0",
+  "description": "Aplicación web moderna con Flask y Tailwind CSS",
+  "main": "app.py",
+  "scripts": {
+    "build:css": "tailwindcss -i ./static/css/input.css -o ./static/css/output.css",
+    "watch:css": "tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch",
+    "dev": "npm run watch:css & python app.py",
+    "build": "npm run build:css"
+  },
+  "keywords": [
+    "flask",
+    "tailwind",
+    "web"
+  ],
+  "author": "Christopher Leyva",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
